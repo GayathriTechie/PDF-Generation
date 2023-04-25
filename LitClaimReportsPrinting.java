@@ -75,36 +75,6 @@ public class LitClaimReportsPrinting {
 			// test
 			stream.setFont(new PDType1Font(FontName.TIMES_ROMAN), 11);	
 			
-			List<String>  contents=new ArrayList<>();
-			List<String> selectedFiels = new ArrayList<String>();
-			if (selectedFiels != null) {
-				if (requiredFieldsList.get("court") != null && (Boolean) requiredFieldsList.get("court")) {
-					selectedFiels.add("Court");
-				}
-
-				if (requiredFieldsList.get("disposition") != null && (Boolean) requiredFieldsList.get("disposition")) {
-					selectedFiels.add("Disposition");
-				}
-
-				if (requiredFieldsList.get("staffs") != null && (Boolean) requiredFieldsList.get("staffs")) {
-					selectedFiels.add("Staffs");
-				}
-
-				if (requiredFieldsList.get("dates") != null && (Boolean) requiredFieldsList.get("dates")) {
-					selectedFiels.add("Dates");
-				}
-
-				if (requiredFieldsList.get("categoryTypes") != null && (Boolean) requiredFieldsList.get("categoryTypes")) {
-					selectedFiels.add("CategoryTypes");
-				}
-				
-				if (selectedFiels.contains("Court")) {
-					contents.add(litClaim.getCourtName());
-				}
-				
-				
-			}
-			String[] stringArray = contents.toArray(new String[0]);
 				
 			/*____________LeftAlign 1__________________*/
 			
